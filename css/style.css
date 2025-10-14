@@ -334,6 +334,106 @@ section {
     }
 }
 
+/* ...existing code... */
+
+/* Extra: Responsive improvements */
+@media (max-width: 900px) {
+    header {
+        padding: 10px 30px;
+    }
+    section {
+        padding: 60px 10px;
+    }
+    .main {
+        flex-direction: column;
+        gap: 2em;
+        padding: 1em 0.5em;
+        text-align: center;
+    }
+    .image img {
+        width: 16em;
+        margin-top: 30px;
+    }
+    .content, .projects .content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card, .project-card {
+        width: 90vw;
+        min-width: 220px;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        /* padding: 8px 5px; */
+        align-items: flex-start;
+    }
+    .logo {
+        font-size: 1.9em;
+    }
+    .navigation {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        margin-top: 8px;
+    }
+    .navigation a {
+        padding-left: 10px;
+        font-size: 1em;
+    }
+    section {
+        padding: 40px 5px;
+    }
+    .main {
+        padding: 5em 0.2em;
+        gap: 1em;
+    }
+    .image img {
+        width: 12em;
+    }
+    .title {
+        font-size: 1.2em;
+    }
+    .card, .project-card {
+        width: 98vw;
+        min-width: 180px;
+        max-width: 350px;
+        padding: 15px;
+        margin: 10px 0;
+    }
+    .footer {
+        padding: 1em 0.2em;
+        font-size: 0.9em;
+    }
+    .footer .social-icons a {
+        font-size: 1em;
+        width: 1.5em;
+        height: 1.5em;
+        line-height: 1.7em;
+    }
+}
+
+@media (max-width: 400px) {
+    .main h2 span {
+        font-size: 2em;
+    }
+    .main h3 {
+        font-size: 1em;
+    }
+    .image img {
+        width: 8em;
+    }
+    .footer-title {
+        font-size: 1em;
+    }
+}
+
+/* ...existing code... */
+
 @media (max-width: 641px) {
     body {
         font-size: 12px;
@@ -352,4 +452,5 @@ section {
     body {
         font-size: 10px;
     }
+
 }
