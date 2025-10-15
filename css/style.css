@@ -363,6 +363,9 @@ section {
         min-width: 220px;
         max-width: 400px;
     }
+    .project-image video {
+        max-height: 180px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -404,6 +407,9 @@ section {
         max-width: 350px;
         padding: 15px;
         margin: 10px 0;
+    }
+    .project-image video {
+        max-height: 120px;
     }
     .footer {
         padding: 1em 0.2em;
@@ -454,3 +460,4 @@ section {
     }
 
 }
+
